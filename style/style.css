@@ -1,0 +1,158 @@
+/* Class names ⬇️ */
+
+/*
+<Header
+  Main-header
+  Main-nav 
+>
+<main
+  main-container
+  container
+  asides
+  aside1
+  aside2
+  aside3
+  content
+  topic
+    <
+    topic1
+    topic2
+    topic3
+    topic4
+    >
+
+>
+
+  main-footer 
+*/
+
+/* Main-header styles ���️ */
+
+.Main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  
+  font-size: 23px;
+  background-color: #333;
+  color: #fff;
+
+  padding: 20px;
+
+/* Add this rule to make the header sticky */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: .5s ease-in-out;
+ }
+ .Main-nav{
+  gap: 20px;
+  display: flex;
+}
+
+/* Main-container styles */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 5px;
+  margin: 20px;
+  
+
+}
+.container{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Asides styles */
+
+.asides {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  flex-wrap: wrap;
+  gap: 1px;
+  
+}
+.aside1, .aside2, .aside3 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 6%;
+
+  padding: 20px;
+  margin: 10px;
+  height: fit-content;
+  width: 350px;
+
+  border: 5px solid #333;
+}
+
+/* Add this rule to position the asides to the right */
+.asides {
+  order: 2; /* Change the order to 2 */
+}
+
+/* Content styles */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  gap: 35px;
+
+
+}
+
+/* Topic styles */
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+
+  width: 100%;
+
+  gap: 10px;
+  width: auto;
+
+}
+
+.topic1, .topic2, .topic3, .topic4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 5px;
+
+
+}
+
+
+video,source, picture,img
+{ 
+  height: 40rem;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Main-footer styles */
+
+/* Add this rule to position the main-footer to the bottom */
+/* Add this rule to center the main-footer */
+
+.main-footer {
+  order: 3; /* Change the order to 3 */
+  text-align: center;
+  margin: 20px;
+}
